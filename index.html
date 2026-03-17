@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+        .container { max-width: 800px; width: 100%; }
+        .noticia-principal {
+            position: relative;
+            background-color: #000;
+            color: white;
+            border-radius: 15px 15px 0 0;
+            overflow: hidden;
+            height: 420px;
+        }
+        .foto-principal { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+            filter: brightness(0.8);
+        }
+        .texto-principal {
+            position: absolute; 
+            bottom: 0; 
+            left: 0;
+            padding: 30px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            width: 100%;
+        }
+        .texto-principal h1 {
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+        .barra-vermelha {
+            background-color: #c4170c;
+            color: white;
+            display: flex;
+            padding: 20px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 30px;
+        }
+        .item-vermelho { 
+            flex: 1; 
+            padding: 0 15px; 
+            border-left: 1px solid rgba(255,255,255,0.3); 
+            line-height: 1.3;
+        }
+        .item-vermelho span { color: #ff9999; margin-right: 5px; }
+        .grid { display: flex; gap: 20px; }
+        .coluna { flex: 1; text-decoration: none; color: inherit; }
+        .foto-pequena { 
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            margin-bottom: 12px;
+        }
+        .titulo-vermelho { 
+            color: #c4170c; 
+            font-size: 19px; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            line-height: 1.2;
+        }
+        .subtitulo { 
+            color: #444; 
+            font-size: 14px; 
+            line-height: 1.4;
+        }
+        .dot-red { color: #c4170c; font-size: 12px; margin-right: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="noticia-principal">
+        <img src="1.png" class="foto-principal">
+        <div class="texto-principal">
+            <h1>Trump afirma que 'tudo foi destruído' no Irã e promete 3ª onda de ataques</h1>
+        </div>
+    </div>
+
+    <div class="barra-vermelha">
+        <div class="item-vermelho" style="border:none">
+            <span>●</span> Israel ataca reunião que definiria o novo líder do Irã, diz jornal
+        </div>
+        <div class="item-vermelho">
+            <span>●</span> Agência: estrondos são ouvidos em Dubai, Abu Dhabi e Doha; SIGA
+        </div>
+        <div class="item-vermelho">
+            <span>●</span> General do Irã ameaça centros econômicos do Oriente Médio
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="coluna">
+            <img src="2.png" class="foto-pequena">
+            <div class="titulo-vermelho">Multidão no Irã vai a funeral de crianças; ONU pede apuração</div>
+            <div class="subtitulo"><span class="dot-red">●</span> Escalada nuclear pode ser fatal, diz especialista</div>
+        </div>
+
+        <div class="coluna">
+            <img src="3.png" class="foto-pequena">
+            <div class="titulo-vermelho">Trump ameaça usar bases da Espanha sem autorização</div>
+            <div class="subtitulo"><span class="dot-red">●</span> O que está por trás do conflito entre EUA e Irã?</div>
+        </div>
+
+        <div class="coluna">
+            <img src="4.png" class="foto-pequena">
+            <div class="titulo-vermelho">Valores da guerra: drones de US$ 20 mil x mísseis de US$ 4 mi</div>
+            <div class="subtitulo"><span class="dot-red">●</span> Emirados criam corredor de segurança para voos</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
